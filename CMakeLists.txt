@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 4.0.2)
 project(snake)
 
 set(SDL3_DIR "D:/coding/cpp-libs/SDL3/SDL3-3.2.14/x86_64-w64-mingw32" CACHE PATH "SDL3 root directory")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 
 find_path(SDL3_INCLUDE_DIR SDL3/SDL.h HINTS "${SDL3_DIR}/include")
 find_library(SDL3_LIBRARY SDL3 HINTS "${SDL3_DIR}/lib")
